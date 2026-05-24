@@ -4,53 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashley Karani — DATA | STRATEGY & AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    *, body, html { font-family: 'Lato', sans-serif; }
     html { scroll-behavior: smooth; }
     body { background-color: #FFFFFF; color: #3D2000; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
     .dot-pulse { animation: pulse 2s ease-in-out infinite; }
     .bar-pulse { animation: pulse 2s ease-in-out infinite; }
-    .card { background: #FFFBF0; border: 1px solid #E8D5B0; }
-    .card-inner { background: #FEF3D7; }
-    .tag { background: #FEE8A8; border: 1px solid #E8D5B0; color: #804A00; }
-    .grad-btn { background: linear-gradient(to right, #E49B0F, #C8963E); }
-    .grad-icon { background: linear-gradient(135deg, #E49B0F, #804A00); }
-    .grad-icon-alt { background: linear-gradient(135deg, #C8963E, #674021); }
-    .grad-line { background: linear-gradient(to right, #E49B0F, #804A00); }
-    .text-accent { color: #E49B0F; }
-    .text-dark { color: #3D2000; }
-    .text-mid { color: #6B3A00; }
-    .text-muted { color: #9A7040; }
-    .border-warm { border-color: #E8D5B0; }
-    .hover-card:hover { border-color: #E49B0F; transform: translateY(-8px); }
     .hover-card { transition: all 0.3s ease; }
-    .section-alt { background: #FFFBF0; }
+    .hover-card:hover { border-color: #E49B0F !important; transform: translateY(-6px); }
   </style>
 </head>
 <body class="min-h-screen" style="background:#FFFFFF;color:#3D2000">
 
-  <!-- Background warm ambient glow -->
-  <div class="fixed inset-0 pointer-events-none z-0" style="opacity:0.12">
-    <div style="position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(228,155,15,0.35),transparent 30%),radial-gradient(circle at bottom left,rgba(128,74,0,0.2),transparent 35%)"></div>
-    <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(228,155,15,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(228,155,15,0.06) 1px,transparent 1px);background-size:40px 40px"></div>
+  <!-- Ambient background -->
+  <div class="fixed inset-0 pointer-events-none z-0" style="opacity:0.10">
+    <div style="position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(228,155,15,0.3),transparent 30%),radial-gradient(circle at bottom left,rgba(128,74,0,0.2),transparent 35%)"></div>
+    <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(228,155,15,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(228,155,15,0.05) 1px,transparent 1px);background-size:40px 40px"></div>
   </div>
 
   <div class="relative z-10">
 
     <!-- HEADER -->
-    <header class="sticky top-0 z-50 border-b" style="background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);border-color:#E8D5B0">
+    <header class="sticky top-0 z-50 border-b" style="background:rgba(255,255,255,0.94);backdrop-filter:blur(20px);border-color:#E8D5B0">
       <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div>
-          <h1 class="text-xl font-semibold tracking-wide" style="color:#3D2000">ASHLEY KARANI</h1>
-          <p class="text-sm" style="color:#9A7040">DATA | STRATEGY &amp; AI</p>
+          <h1 class="text-xl font-black tracking-wide" style="color:#3D2000">ASHLEY KARANI</h1>
+          <p class="text-sm font-light" style="color:#9A7040">DATA | STRATEGY &amp; AI</p>
         </div>
-        <nav class="hidden md:flex gap-8 text-sm" style="color:#6B3A00">
-          <a href="#about" class="transition-colors hover:text-amber-600">About</a>
-          <a href="#capabilities" class="transition-colors hover:text-amber-600">Capabilities</a>
-          <a href="#projects" class="transition-colors hover:text-amber-600">Projects</a>
-          <a href="#leadership" class="transition-colors hover:text-amber-600">Leadership</a>
-          <a href="#contact" class="transition-colors hover:text-amber-600">Contact</a>
+        <nav class="hidden md:flex gap-8 text-sm font-bold" style="color:#6B3A00">
+          <a href="#about" class="hover:text-amber-600 transition-colors">About</a>
+          <a href="#capabilities" class="hover:text-amber-600 transition-colors">Capabilities</a>
+          <a href="#projects" class="hover:text-amber-600 transition-colors">Projects</a>
+          <a href="#leadership" class="hover:text-amber-600 transition-colors">Leadership</a>
+          <a href="#contact" class="hover:text-amber-600 transition-colors">Contact</a>
         </nav>
       </div>
     </header>
@@ -59,53 +48,54 @@
     <section class="max-w-7xl mx-auto px-6 py-28 lg:py-40">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm mb-6" style="border:1px solid #E8D5B0;background:#FEF3D7;color:#804A00">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-6" style="border:1px solid #E8D5B0;background:#FEF3D7;color:#804A00">
             Nairobi, Kenya &bull; Strategic Data Leadership
           </div>
           <h1 class="text-5xl lg:text-7xl font-black leading-tight tracking-tight" style="color:#3D2000">
-            Building data systems that drive decisions.
+            I build data systems that power decisions.
           </h1>
-          <p class="mt-8 text-xl leading-relaxed max-w-2xl" style="color:#6B3A00">
-            Transforming fragmented data into scalable platforms, intelligent systems, and measurable business outcomes through analytics, AI, and executive data strategy.
+          <p class="mt-8 text-xl font-light leading-relaxed max-w-2xl" style="color:#6B3A00">
+            I architect scalable data platforms, deploy AI-driven analytics, and deliver governance frameworks that transform fragmented information into measurable business performance and executive clarity.
           </p>
           <div class="mt-10 flex flex-wrap gap-4">
-            <a href="#projects" class="px-7 py-4 rounded-2xl text-white font-semibold shadow-lg inline-block hover:scale-105 transition-all" style="background:linear-gradient(to right,#E49B0F,#C8963E)">View Projects</a>
-            <button class="px-7 py-4 rounded-2xl font-semibold hover:bg-amber-50 transition-all" style="border:1px solid #E8D5B0;color:#6B3A00">Download Resume</button>
+            <a href="#projects" class="px-7 py-4 rounded-2xl text-white font-bold shadow-lg inline-block hover:scale-105 transition-all" style="background:linear-gradient(to right,#E49B0F,#C8963E)">View Projects</a>
+            <button class="px-7 py-4 rounded-2xl font-bold hover:bg-amber-50 transition-all" style="border:1px solid #E8D5B0;color:#6B3A00">Download Resume</button>
           </div>
         </div>
+
         <!-- Metrics Card -->
         <div class="relative">
           <div class="absolute -top-10 -right-10 w-64 h-64 rounded-full" style="background:rgba(228,155,15,0.15);filter:blur(60px)"></div>
           <div class="absolute bottom-0 left-0 w-72 h-72 rounded-full" style="background:rgba(128,74,0,0.1);filter:blur(60px)"></div>
-          <div class="relative rounded-3xl p-8 shadow-xl" style="background:#FFFBF0;border:1px solid #E8D5B0;backdrop-filter:blur(10px)">
+          <div class="relative rounded-3xl p-8 shadow-xl" style="background:#FFFBF0;border:1px solid #E8D5B0">
             <div class="flex items-center justify-between mb-8">
               <div>
-                <p class="text-sm" style="color:#9A7040">Executive Snapshot</p>
-                <h3 class="text-2xl font-bold mt-1" style="color:#3D2000">Data Leadership Metrics</h3>
+                <p class="text-sm font-light" style="color:#9A7040">Executive Snapshot</p>
+                <h3 class="text-2xl font-black mt-1" style="color:#3D2000">Leadership at a Glance</h3>
               </div>
               <div class="w-3 h-3 rounded-full dot-pulse" style="background:#E49B0F"></div>
             </div>
             <div class="grid grid-cols-2 gap-5">
               <div class="rounded-2xl p-6 hover:-translate-y-1 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0">
                 <div class="text-4xl font-black" style="color:#E49B0F">6+</div>
-                <div class="mt-2 text-sm" style="color:#9A7040">Years Experience</div>
+                <div class="mt-2 text-sm font-light" style="color:#9A7040">Years in Data Leadership</div>
               </div>
               <div class="rounded-2xl p-6 hover:-translate-y-1 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0">
                 <div class="text-4xl font-black" style="color:#E49B0F">4</div>
-                <div class="mt-2 text-sm" style="color:#9A7040">Industries</div>
+                <div class="mt-2 text-sm font-light" style="color:#9A7040">Industries Transformed</div>
               </div>
               <div class="rounded-2xl p-6 hover:-translate-y-1 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0">
                 <div class="text-4xl font-black" style="color:#E49B0F">10+</div>
-                <div class="mt-2 text-sm" style="color:#9A7040">Platforms &amp; Tools</div>
+                <div class="mt-2 text-sm font-light" style="color:#9A7040">Enterprise Platforms</div>
               </div>
               <div class="rounded-2xl p-6 hover:-translate-y-1 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0">
                 <div class="text-3xl font-black" style="color:#E49B0F">End-to-End</div>
-                <div class="mt-2 text-sm" style="color:#9A7040">Data Ecosystems</div>
+                <div class="mt-2 text-sm font-light" style="color:#9A7040">Data Ecosystem Ownership</div>
               </div>
             </div>
             <div class="mt-8 rounded-2xl p-6" style="background:linear-gradient(to right,rgba(228,155,15,0.12),rgba(128,74,0,0.08));border:1px solid #E8D5B0">
               <div class="flex items-center justify-between text-sm mb-4" style="color:#6B3A00">
-                <span>Platforms</span><span>AWS &bull; GCP &bull; Snowflake &bull; Redshift</span>
+                <span class="font-bold">Cloud Platforms</span><span class="font-light">AWS &bull; GCP &bull; Snowflake &bull; Redshift</span>
               </div>
               <div class="h-3 rounded-full overflow-hidden" style="background:#E8D5B0">
                 <div class="w-4/5 h-full rounded-full bar-pulse" style="background:linear-gradient(to right,#E49B0F,#C8963E,#804A00)"></div>
@@ -120,36 +110,38 @@
     <section id="about" class="max-w-7xl mx-auto px-6 py-24">
       <div class="grid lg:grid-cols-2 gap-14 items-center">
         <div>
-          <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">About &amp; Philosophy</p>
-          <h2 class="text-4xl lg:text-5xl font-black leading-tight" style="color:#3D2000">Turning fragmented information into decision clarity.</h2>
-          <p class="mt-8 text-lg leading-relaxed" style="color:#6B3A00">
-            I am focused on building systems that enable businesses to operate with confidence. Across fintech, logistics, retail, and consulting, I have led the development of scalable data ecosystems connecting engineering, analytics, governance, and AI.
+          <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">About &amp; Philosophy</p>
+          <p class="text-sm italic mb-6" style="color:#C8963E">A glimpse into one of many dimensions of how I work and think.</p>
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight" style="color:#3D2000">Turning complexity into clarity, at scale.</h2>
+          <p class="mt-8 text-lg font-light leading-relaxed" style="color:#6B3A00">
+            I build the systems that allow organizations to operate with precision and confidence. Across fintech, logistics, retail, and consulting, I have architected enterprise-grade data ecosystems that unite engineering rigor, analytical insight, governance discipline, and AI capability into a single, coherent operational layer.
           </p>
-          <p class="mt-6 leading-relaxed" style="color:#9A7040">
-            My approach blends strategic thinking with deep technical execution — bridging executive decision-making with robust platform architecture. The result is not just dashboards, but operational intelligence systems that shape how organizations scale.
+          <p class="mt-6 font-light leading-relaxed" style="color:#9A7040">
+            My work spans both the strategic and the deeply technical, translating executive priorities into scalable platform architectures, and delivering not just dashboards, but decision infrastructure that shapes how organizations compete and grow.
           </p>
         </div>
         <div class="rounded-3xl p-8" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <div class="flex items-center justify-between mb-8">
-            <h3 class="text-2xl font-bold" style="color:#3D2000">Decision Pipeline</h3>
-            <div class="text-xs uppercase tracking-widest" style="color:#9A7040">Framework</div>
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-2xl font-black" style="color:#3D2000">Decision Pipeline</h3>
+            <div class="text-xs uppercase tracking-widest font-bold" style="color:#9A7040">Framework</div>
           </div>
+          <p class="text-sm italic mb-8" style="color:#C8963E">One of several frameworks I apply depending on organizational context.</p>
           <div class="space-y-6">
             <div class="flex items-center gap-5">
               <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">1</div>
-              <div class="flex-1 rounded-2xl p-5 hover:border-amber-400 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-semibold text-lg" style="color:#3D2000">Data Ingestion</h4><p class="mt-1 text-sm" style="color:#9A7040">Structured systems designed for scalable decision-making.</p></div>
+              <div class="flex-1 rounded-2xl p-5 transition-all hover:border-amber-400" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-bold text-lg" style="color:#3D2000">Data Ingestion</h4><p class="mt-1 text-sm font-light" style="color:#9A7040">Reliable, governed pipelines built for enterprise scale.</p></div>
             </div>
             <div class="flex items-center gap-5">
               <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">2</div>
-              <div class="flex-1 rounded-2xl p-5 hover:border-amber-400 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-semibold text-lg" style="color:#3D2000">Transformation &amp; Modeling</h4><p class="mt-1 text-sm" style="color:#9A7040">Structured systems designed for scalable decision-making.</p></div>
+              <div class="flex-1 rounded-2xl p-5 transition-all hover:border-amber-400" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-bold text-lg" style="color:#3D2000">Transformation &amp; Modeling</h4><p class="mt-1 text-sm font-light" style="color:#9A7040">Structured, consistent data models that power trust.</p></div>
             </div>
             <div class="flex items-center gap-5">
               <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">3</div>
-              <div class="flex-1 rounded-2xl p-5 hover:border-amber-400 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-semibold text-lg" style="color:#3D2000">Analytics &amp; Intelligence</h4><p class="mt-1 text-sm" style="color:#9A7040">Structured systems designed for scalable decision-making.</p></div>
+              <div class="flex-1 rounded-2xl p-5 transition-all hover:border-amber-400" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-bold text-lg" style="color:#3D2000">Analytics &amp; Intelligence</h4><p class="mt-1 text-sm font-light" style="color:#9A7040">Insights engineered for executive and operational consumption.</p></div>
             </div>
             <div class="flex items-center gap-5">
               <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">4</div>
-              <div class="flex-1 rounded-2xl p-5 hover:border-amber-400 transition-all" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-semibold text-lg" style="color:#3D2000">Business Decisions</h4><p class="mt-1 text-sm" style="color:#9A7040">Structured systems designed for scalable decision-making.</p></div>
+              <div class="flex-1 rounded-2xl p-5 transition-all hover:border-amber-400" style="background:#FEF3D7;border:1px solid #E8D5B0"><h4 class="font-bold text-lg" style="color:#3D2000">Business Decisions</h4><p class="mt-1 text-sm font-light" style="color:#9A7040">Data converted into strategy, not just reports.</p></div>
             </div>
           </div>
         </div>
@@ -158,85 +150,104 @@
 
     <!-- CAPABILITIES -->
     <section id="capabilities" class="max-w-7xl mx-auto px-6 py-24">
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-4">
         <div>
-          <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">Core Capabilities</p>
-          <h2 class="text-4xl lg:text-5xl font-black" style="color:#3D2000">Strategic data leadership across the stack.</h2>
+          <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">Core Capabilities</p>
+          <p class="text-sm italic mb-4" style="color:#C8963E">A representative sample. Each capability shown reflects one of many applied engagements.</p>
+          <h2 class="text-4xl lg:text-5xl font-black" style="color:#3D2000">Strategic data leadership across the full stack.</h2>
         </div>
-        <p class="max-w-xl leading-relaxed" style="color:#9A7040">A combination of engineering depth, analytical thinking, governance expertise, and AI integration designed for modern organizations.</p>
+        <p class="max-w-xl font-light leading-relaxed" style="color:#9A7040">A cross-section of core competencies, each applied across diverse industries and organizational contexts at executive scale.</p>
       </div>
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div class="mt-14 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
 
         <div class="group rounded-3xl p-8 hover-card" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-bold" style="color:#3D2000">Data Governance</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
-          <p class="leading-relaxed" style="color:#9A7040">Designed scalable governance frameworks with ownership models, quality monitoring, lineage visibility, and reporting consistency.</p>
+          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-black" style="color:#3D2000">Data Governance</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
+          <p class="font-light leading-relaxed" style="color:#9A7040">I design and implement governance frameworks that bring consistency, accountability, and trust to enterprise data. Ownership structures, quality monitoring, and lineage visibility are embedded by design, not added as afterthoughts.</p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">dbt</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">dbt</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span>
           </div>
-          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0"><p class="text-sm uppercase tracking-widest mb-2" style="color:#C8963E">Business Impact</p><p style="color:#6B3A00">Established trusted reporting and reduced data inconsistencies across business teams.</p></div>
+          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0">
+            <p class="text-sm uppercase tracking-widest font-bold mb-2" style="color:#C8963E">Business Impact</p>
+            <p class="font-light" style="color:#6B3A00">Established trusted, standardized reporting that reduced data inconsistencies across business units and restored stakeholder confidence in metrics.</p>
+          </div>
         </div>
 
         <div class="group rounded-3xl p-8 hover-card" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-bold" style="color:#3D2000">AI Integration &amp; Adoption</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
-          <p class="leading-relaxed" style="color:#9A7040">Integrated LLM-powered workflows and retrieval systems into analytics and operational processes.</p>
+          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-black" style="color:#3D2000">AI Integration &amp; Adoption</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
+          <p class="font-light leading-relaxed" style="color:#9A7040">I have deployed LLM-powered workflows and intelligent retrieval systems that extend the value of existing analytics infrastructure, accelerating operational decision-making and enabling new categories of organizational intelligence.</p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">RAG</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Embeddings</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Vector DBs</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">RAG</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Embeddings</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Vector DBs</span>
           </div>
-          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0"><p class="text-sm uppercase tracking-widest mb-2" style="color:#C8963E">Business Impact</p><p style="color:#6B3A00">Improved discovery experiences and accelerated internal decision support.</p></div>
+          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0">
+            <p class="text-sm uppercase tracking-widest font-bold mb-2" style="color:#C8963E">Business Impact</p>
+            <p class="font-light" style="color:#6B3A00">Improved discovery experiences, accelerated decision support cycles, and embedded AI into workflows that previously relied on manual analysis.</p>
+          </div>
         </div>
 
         <div class="group rounded-3xl p-8 hover-card" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-bold" style="color:#3D2000">Data Engineering &amp; Platforms</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
-          <p class="leading-relaxed" style="color:#9A7040">Built cloud-native ETL pipelines and scalable data platforms across fintech, logistics, and retail ecosystems.</p>
+          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-black" style="color:#3D2000">Data Engineering &amp; Platforms</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
+          <p class="font-light leading-relaxed" style="color:#9A7040">I architect cloud-native ETL pipelines and enterprise data platforms built for reliability and scale, across fintech, logistics, and retail ecosystems. Infrastructure is designed to grow with the business, not be replaced by it.</p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Snowflake</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Airbyte</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Snowflake</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Airbyte</span>
           </div>
-          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0"><p class="text-sm uppercase tracking-widest mb-2" style="color:#C8963E">Business Impact</p><p style="color:#6B3A00">Enabled reliable executive reporting and scalable analytics infrastructure.</p></div>
+          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0">
+            <p class="text-sm uppercase tracking-widest font-bold mb-2" style="color:#C8963E">Business Impact</p>
+            <p class="font-light" style="color:#6B3A00">Enabled reliable, executive-grade reporting and reduced infrastructure fragility across organizations operating at scale.</p>
+          </div>
         </div>
 
         <div class="group rounded-3xl p-8 hover-card" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-bold" style="color:#3D2000">Data Science &amp; ML</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
-          <p class="leading-relaxed" style="color:#9A7040">Developed analytical models, experimentation frameworks, and predictive systems to improve business performance.</p>
+          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-black" style="color:#3D2000">Data Science &amp; ML</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
+          <p class="font-light leading-relaxed" style="color:#9A7040">I develop predictive models and experimentation frameworks grounded in business performance outcomes. Technical accuracy matters only when it translates to measurable commercial and operational impact.</p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">scikit-learn</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Pandas</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">scikit-learn</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Pandas</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
           </div>
-          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0"><p class="text-sm uppercase tracking-widest mb-2" style="color:#C8963E">Business Impact</p><p style="color:#6B3A00">Improved targeting accuracy and operational forecasting.</p></div>
+          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0">
+            <p class="text-sm uppercase tracking-widest font-bold mb-2" style="color:#C8963E">Business Impact</p>
+            <p class="font-light" style="color:#6B3A00">Improved targeting precision, strengthened operational forecasting, and informed product and commercial strategy with evidence-based models.</p>
+          </div>
         </div>
 
         <div class="group rounded-3xl p-8 hover-card" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-bold" style="color:#3D2000">Analytics &amp; Insights</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
-          <p class="leading-relaxed" style="color:#9A7040">Delivered strategic dashboards and business intelligence systems with actionable insights.</p>
+          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-black" style="color:#3D2000">Analytics &amp; Insights</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
+          <p class="font-light leading-relaxed" style="color:#9A7040">I build BI systems and strategic dashboards that translate raw data into executive visibility. The focus is always on enabling faster, better-informed decisions at every level of the organization, not producing more reports.</p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Looker</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Tableau</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Metabase</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Looker</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Tableau</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Metabase</span>
           </div>
-          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0"><p class="text-sm uppercase tracking-widest mb-2" style="color:#C8963E">Business Impact</p><p style="color:#6B3A00">Improved executive visibility and enabled faster operational decisions.</p></div>
+          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0">
+            <p class="text-sm uppercase tracking-widest font-bold mb-2" style="color:#C8963E">Business Impact</p>
+            <p class="font-light" style="color:#6B3A00">Elevated executive visibility, consolidated reporting surfaces, and enabled operational teams to act on insight without requiring analyst intermediaries.</p>
+          </div>
         </div>
 
         <div class="group rounded-3xl p-8 hover-card" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-bold" style="color:#3D2000">Decision Intelligence</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
-          <p class="leading-relaxed" style="color:#9A7040">Built measurement frameworks connecting experimentation, operations, and strategic outcomes.</p>
+          <div class="flex items-center justify-between mb-6"><h3 class="text-2xl font-black" style="color:#3D2000">Decision Intelligence</h3><div class="w-3 h-3 rounded-full group-hover:scale-150 transition-all" style="background:#E49B0F"></div></div>
+          <p class="font-light leading-relaxed" style="color:#9A7040">I design measurement frameworks that close the loop between business hypotheses, empirical evidence, and operational action, turning analytics into a continuous decision engine rather than a periodic reporting function.</p>
           <div class="mt-6 flex flex-wrap gap-2">
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">A/B Testing</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
-            <span class="px-3 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">BI Platforms</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">A/B Testing</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
+            <span class="px-3 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">BI Platforms</span>
           </div>
-          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0"><p class="text-sm uppercase tracking-widest mb-2" style="color:#C8963E">Business Impact</p><p style="color:#6B3A00">Improved funnel optimization and strategic planning accuracy.</p></div>
+          <div class="mt-8 pt-6" style="border-top:1px solid #E8D5B0">
+            <p class="text-sm uppercase tracking-widest font-bold mb-2" style="color:#C8963E">Business Impact</p>
+            <p class="font-light" style="color:#6B3A00">Improved funnel performance, sharpened strategic planning accuracy, and connected experimentation outcomes directly to commercial results.</p>
+          </div>
         </div>
 
       </div>
@@ -244,47 +255,47 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="max-w-7xl mx-auto px-6 py-24">
-      <div class="mb-16">
-        <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">Featured Projects</p>
+      <div class="mb-4">
+        <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">Featured Projects</p>
+        <p class="text-sm italic mb-6" style="color:#C8963E">Five selected engagements from a broader portfolio of enterprise data work spanning multiple industries and organizational scales.</p>
         <h2 class="text-4xl lg:text-5xl font-black max-w-4xl leading-tight" style="color:#3D2000">Building scalable platforms and intelligent decision systems.</h2>
       </div>
-      <div class="space-y-10">
+      <div class="mt-12 space-y-10">
 
-        <!-- Project Card Reusable Block -->
         <div class="rounded-3xl overflow-hidden" style="background:linear-gradient(135deg,#FFFBF0,#FEF3D7);border:1px solid #E8D5B0">
           <div class="grid lg:grid-cols-2 gap-10 p-10">
             <div>
               <div class="flex items-center gap-4 mb-6">
                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">01</div>
-                <div><h3 class="text-3xl font-black" style="color:#3D2000">Enterprise Data Platform</h3><p class="mt-1" style="color:#C8963E">Salesforce → Redshift</p></div>
+                <div><h3 class="text-3xl font-black" style="color:#3D2000">Enterprise Data Platform</h3><p class="mt-1 font-bold" style="color:#C8963E">Salesforce to Redshift</p></div>
               </div>
               <div class="space-y-5">
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Challenge</p><p style="color:#6B3A00">Fragmented sales and operational reporting across multiple teams.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Solution</p><p style="color:#6B3A00">Designed and implemented an end-to-end ETL architecture with centralized modeling and executive dashboards.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Impact</p><p style="color:#6B3A00">Unified reporting ecosystem with reliable daily executive insights and operational visibility.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Challenge</p><p class="font-light" style="color:#6B3A00">Sales and operational reporting was fragmented across multiple disconnected systems, creating conflicting numbers and eroding leadership confidence in data.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Solution</p><p class="font-light" style="color:#6B3A00">Designed and delivered a complete ETL architecture, centralized data modeling layer, and executive dashboard suite, creating a single source of truth across the business.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Impact</p><p class="font-light" style="color:#6B3A00">Unified reporting ecosystem with reliable daily executive insights, eliminating data disputes and enabling faster, more confident operational decisions.</p></div>
               </div>
               <div class="mt-8 flex flex-wrap gap-3">
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Airbyte</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Airbyte</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
               </div>
             </div>
             <div class="relative rounded-3xl overflow-hidden p-8" style="background:#FEF3D7;border:1px solid #E8D5B0;min-height:300px">
               <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at top left,rgba(228,155,15,0.5),transparent 30%),radial-gradient(circle at bottom right,rgba(128,74,0,0.4),transparent 30%)"></div>
               <div class="relative flex flex-col h-full justify-between">
-                <div class="flex justify-between items-center"><div><p class="text-sm" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-bold mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-medium" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
+                <div class="flex justify-between items-center"><div><p class="text-sm font-light" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-black mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-bold" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
                 <div class="space-y-4 mt-8">
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-8">
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Reliability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Scalability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Visibility</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Reliability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Scalability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Visibility</div></div>
                 </div>
               </div>
             </div>
@@ -296,34 +307,34 @@
             <div>
               <div class="flex items-center gap-4 mb-6">
                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">02</div>
-                <div><h3 class="text-3xl font-black" style="color:#3D2000">AI Search (RAG Pipeline)</h3><p class="mt-1" style="color:#C8963E">Embeddings + Vector Search</p></div>
+                <div><h3 class="text-3xl font-black" style="color:#3D2000">AI Search (RAG Pipeline)</h3><p class="mt-1 font-bold" style="color:#C8963E">Embeddings and Vector Search</p></div>
               </div>
               <div class="space-y-5">
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Challenge</p><p style="color:#6B3A00">Users struggled to discover relevant product information efficiently.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Solution</p><p style="color:#6B3A00">Built an intelligent retrieval pipeline using embeddings and vector databases to improve contextual search.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Impact</p><p style="color:#6B3A00">Increased engagement, search relevance, and product discovery efficiency.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Challenge</p><p class="font-light" style="color:#6B3A00">Users struggled to surface relevant product information efficiently, resulting in low engagement, poor discovery rates, and lost commercial opportunity.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Solution</p><p class="font-light" style="color:#6B3A00">Designed and deployed an intelligent retrieval pipeline using embeddings and vector databases, enabling contextual, intent-aware search at scale.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Impact</p><p class="font-light" style="color:#6B3A00">Measurably increased product engagement, improved search relevance, and accelerated discovery pathways across the platform.</p></div>
               </div>
               <div class="mt-8 flex flex-wrap gap-3">
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">LLMs</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Embeddings</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Vector DB</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">LLMs</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Embeddings</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Vector DB</span>
               </div>
             </div>
             <div class="relative rounded-3xl overflow-hidden p-8" style="background:#FEF3D7;border:1px solid #E8D5B0;min-height:300px">
               <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at top left,rgba(228,155,15,0.5),transparent 30%),radial-gradient(circle at bottom right,rgba(128,74,0,0.4),transparent 30%)"></div>
               <div class="relative flex flex-col h-full justify-between">
-                <div class="flex justify-between items-center"><div><p class="text-sm" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-bold mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-medium" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
+                <div class="flex justify-between items-center"><div><p class="text-sm font-light" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-black mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-bold" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
                 <div class="space-y-4 mt-8">
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-8">
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Reliability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Scalability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Visibility</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Reliability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Scalability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Visibility</div></div>
                 </div>
               </div>
             </div>
@@ -335,34 +346,34 @@
             <div>
               <div class="flex items-center gap-4 mb-6">
                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">03</div>
-                <div><h3 class="text-3xl font-black" style="color:#3D2000">Real-Time Logistics Analytics</h3><p class="mt-1" style="color:#C8963E">Event-Based Operations Monitoring</p></div>
+                <div><h3 class="text-3xl font-black" style="color:#3D2000">Real-Time Logistics Analytics</h3><p class="mt-1 font-bold" style="color:#C8963E">Event-Based Operations Monitoring</p></div>
               </div>
               <div class="space-y-5">
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Challenge</p><p style="color:#6B3A00">Lack of operational visibility across delivery tracking and SLA performance.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Solution</p><p style="color:#6B3A00">Implemented event-driven pipelines with monitoring dashboards and operational insights.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Impact</p><p style="color:#6B3A00">Enabled proactive SLA monitoring and improved operational responsiveness.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Challenge</p><p class="font-light" style="color:#6B3A00">The business lacked operational visibility into delivery performance and SLA adherence, making it impossible to respond proactively to service failures.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Solution</p><p class="font-light" style="color:#6B3A00">Built an event-driven data pipeline with real-time monitoring dashboards, surfacing SLA performance, delivery status, and operational risk in a single view.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Impact</p><p class="font-light" style="color:#6B3A00">Enabled proactive SLA management, significantly reduced operational response times, and provided leadership with live performance intelligence.</p></div>
               </div>
               <div class="mt-8 flex flex-wrap gap-3">
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Kafka</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Tableau</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Kafka</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Tableau</span>
               </div>
             </div>
             <div class="relative rounded-3xl overflow-hidden p-8" style="background:#FEF3D7;border:1px solid #E8D5B0;min-height:300px">
               <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at top left,rgba(228,155,15,0.5),transparent 30%),radial-gradient(circle at bottom right,rgba(128,74,0,0.4),transparent 30%)"></div>
               <div class="relative flex flex-col h-full justify-between">
-                <div class="flex justify-between items-center"><div><p class="text-sm" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-bold mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-medium" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
+                <div class="flex justify-between items-center"><div><p class="text-sm font-light" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-black mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-bold" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
                 <div class="space-y-4 mt-8">
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-8">
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Reliability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Scalability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Visibility</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Reliability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Scalability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Visibility</div></div>
                 </div>
               </div>
             </div>
@@ -374,34 +385,34 @@
             <div>
               <div class="flex items-center gap-4 mb-6">
                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">04</div>
-                <div><h3 class="text-3xl font-black" style="color:#3D2000">Marketing Attribution Model</h3><p class="mt-1" style="color:#C8963E">Multi-Touch Attribution</p></div>
+                <div><h3 class="text-3xl font-black" style="color:#3D2000">Marketing Attribution Model</h3><p class="mt-1 font-bold" style="color:#C8963E">Multi-Touch Attribution</p></div>
               </div>
               <div class="space-y-5">
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Challenge</p><p style="color:#6B3A00">Marketing spend lacked measurable attribution visibility.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Solution</p><p style="color:#6B3A00">Built a custom multi-touch attribution framework integrating campaign and customer behavior data.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Impact</p><p style="color:#6B3A00">Optimized campaign investment decisions and improved marketing ROI visibility.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Challenge</p><p class="font-light" style="color:#6B3A00">Marketing investment decisions were being made without reliable attribution data, leading to inefficient spend allocation and an inability to connect campaigns to revenue outcomes.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Solution</p><p class="font-light" style="color:#6B3A00">Designed and built a custom multi-touch attribution framework, integrating campaign touchpoint data with customer behavioral signals to produce channel-level ROI visibility.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Impact</p><p class="font-light" style="color:#6B3A00">Enabled data-driven budget allocation, improved marketing ROI transparency, and directly informed quarterly investment strategy.</p></div>
               </div>
               <div class="mt-8 flex flex-wrap gap-3">
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">BigQuery</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">BigQuery</span>
               </div>
             </div>
             <div class="relative rounded-3xl overflow-hidden p-8" style="background:#FEF3D7;border:1px solid #E8D5B0;min-height:300px">
               <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at top left,rgba(228,155,15,0.5),transparent 30%),radial-gradient(circle at bottom right,rgba(128,74,0,0.4),transparent 30%)"></div>
               <div class="relative flex flex-col h-full justify-between">
-                <div class="flex justify-between items-center"><div><p class="text-sm" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-bold mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-medium" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
+                <div class="flex justify-between items-center"><div><p class="text-sm font-light" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-black mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-bold" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
                 <div class="space-y-4 mt-8">
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-8">
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Reliability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Scalability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Visibility</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Reliability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Scalability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Visibility</div></div>
                 </div>
               </div>
             </div>
@@ -413,34 +424,34 @@
             <div>
               <div class="flex items-center gap-4 mb-6">
                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-lg flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">05</div>
-                <div><h3 class="text-3xl font-black" style="color:#3D2000">Data Governance Framework</h3><p class="mt-1" style="color:#C8963E">Quality + Ownership Systems</p></div>
+                <div><h3 class="text-3xl font-black" style="color:#3D2000">Data Governance Framework</h3><p class="mt-1 font-bold" style="color:#C8963E">Quality and Ownership Systems</p></div>
               </div>
               <div class="space-y-5">
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Challenge</p><p style="color:#6B3A00">Inconsistent metrics and reporting trust across departments.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Solution</p><p style="color:#6B3A00">Introduced governance policies, validation layers, ownership structures, and quality monitoring.</p></div>
-                <div><p class="text-xs uppercase tracking-widest mb-1" style="color:#9A7040">Impact</p><p style="color:#6B3A00">Created trusted, standardized reporting and improved organizational confidence in data.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Challenge</p><p class="font-light" style="color:#6B3A00">Inconsistent metric definitions and conflicting reports were eroding trust in data across departments, slowing decision-making and undermining analytical credibility.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Solution</p><p class="font-light" style="color:#6B3A00">Designed and implemented an enterprise governance framework covering ownership structures, data quality validation, documentation standards, and cross-functional accountability layers.</p></div>
+                <div><p class="text-xs uppercase tracking-widest font-bold mb-1" style="color:#9A7040">Impact</p><p class="font-light" style="color:#6B3A00">Restored organizational confidence in data, standardized reporting definitions, and created a sustainable foundation for analytical scale.</p></div>
               </div>
               <div class="mt-8 flex flex-wrap gap-3">
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">dbt</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Documentation</span>
-                <span class="px-4 py-2 rounded-full text-sm" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Governance Workflows</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">dbt</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Documentation</span>
+                <span class="px-4 py-2 rounded-full text-sm font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Governance Workflows</span>
               </div>
             </div>
             <div class="relative rounded-3xl overflow-hidden p-8" style="background:#FEF3D7;border:1px solid #E8D5B0;min-height:300px">
               <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at top left,rgba(228,155,15,0.5),transparent 30%),radial-gradient(circle at bottom right,rgba(128,74,0,0.4),transparent 30%)"></div>
               <div class="relative flex flex-col h-full justify-between">
-                <div class="flex justify-between items-center"><div><p class="text-sm" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-bold mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-medium" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
+                <div class="flex justify-between items-center"><div><p class="text-sm font-light" style="color:#9A7040">Architecture Overview</p><h4 class="text-xl font-black mt-1" style="color:#3D2000">System Flow</h4></div><span class="px-3 py-1 rounded-full text-sm font-bold" style="background:rgba(228,155,15,0.15);border:1px solid rgba(228,155,15,0.4);color:#804A00">Active</span></div>
                 <div class="space-y-4 mt-8">
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
-                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">1</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Source Systems</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">2</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Transformation Layer</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">3</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Warehouse</div></div>
+                  <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-xl flex items-center justify-center font-black flex-shrink-0 text-sm text-white" style="background:linear-gradient(135deg,#E49B0F,#C8963E)">4</div><div class="flex-1 h-px" style="background:linear-gradient(to right,#E49B0F,#804A00)"></div><div class="rounded-xl px-4 py-2 text-sm text-center font-bold" style="background:#FFFBF0;border:1px solid #E8D5B0;color:#6B3A00;min-width:160px">Insights &amp; Decisions</div></div>
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-8">
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Reliability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Scalability</div></div>
-                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs" style="color:#9A7040">Visibility</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Reliability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Scalability</div></div>
+                  <div class="rounded-xl p-3 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-lg font-black" style="color:#E49B0F">98%</div><div class="text-xs font-light" style="color:#9A7040">Visibility</div></div>
                 </div>
               </div>
             </div>
@@ -452,45 +463,58 @@
 
     <!-- TECH STACK -->
     <section class="max-w-7xl mx-auto px-6 py-24">
-      <div class="mb-14">
-        <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">Tech Stack</p>
+      <div class="mb-4">
+        <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">Tech Stack</p>
+        <p class="text-sm italic mb-6" style="color:#C8963E">A current cross-section. My technical repertoire is broader and continuously expanding across new platforms and paradigms.</p>
         <h2 class="text-4xl lg:text-5xl font-black" style="color:#3D2000">Modern tools for scalable data systems.</h2>
       </div>
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-bold mb-6" style="color:#3D2000">Data Engineering</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl hover:scale-105 transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Airbyte</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Stitch</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Hevo</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS Glue</span></div></div>
-        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-bold mb-6" style="color:#3D2000">Warehousing</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">BigQuery</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Snowflake</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span></div></div>
-        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-bold mb-6" style="color:#3D2000">BI</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Looker</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Tableau</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Metabase</span></div></div>
-        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-bold mb-6" style="color:#3D2000">Programming</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span></div></div>
-        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-bold mb-6" style="color:#3D2000">AI / ML</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">LLMs</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">RAG</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">scikit-learn</span></div></div>
-        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-bold mb-6" style="color:#3D2000">Dev Tools</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Docker</span><span class="px-4 py-3 rounded-2xl transition-all" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">GitHub</span></div></div>
+      <div class="mt-12 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-black mb-6" style="color:#3D2000">Data Engineering</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl hover:scale-105 transition-all font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Airbyte</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Stitch</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Hevo</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">AWS Glue</span></div></div>
+        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-black mb-6" style="color:#3D2000">Warehousing</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">BigQuery</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Snowflake</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Redshift</span></div></div>
+        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-black mb-6" style="color:#3D2000">Business Intelligence</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Power BI</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Looker</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Tableau</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Metabase</span></div></div>
+        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-black mb-6" style="color:#3D2000">Programming</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Python</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">SQL</span></div></div>
+        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-black mb-6" style="color:#3D2000">AI / ML</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">LLMs</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">RAG</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">scikit-learn</span></div></div>
+        <div class="rounded-3xl p-8 hover:border-amber-400 transition-all" style="background:#FFFBF0;border:1px solid #E8D5B0"><h3 class="text-2xl font-black mb-6" style="color:#3D2000">Dev Tools</h3><div class="flex flex-wrap gap-3"><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">Docker</span><span class="px-4 py-3 rounded-2xl font-bold" style="background:#FEE8A8;border:1px solid #E8D5B0;color:#804A00">GitHub</span></div></div>
       </div>
     </section>
 
-    <!-- LEADERSHIP + DECISION INTELLIGENCE -->
+    <!-- LEADERSHIP -->
     <section class="max-w-7xl mx-auto px-6 py-24">
       <div class="grid lg:grid-cols-2 gap-12">
         <div class="rounded-3xl p-10" style="background:#FFFBF0;border:1px solid #E8D5B0">
-          <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">Decision Intelligence</p>
-          <h2 class="text-4xl font-black leading-tight" style="color:#3D2000">Assumption → Evidence → Insight → Action</h2>
-          <p class="mt-6 leading-relaxed" style="color:#9A7040">I approach analytics as an operational decision system — connecting business assumptions with measurable evidence and scalable action.</p>
+          <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">Decision Intelligence</p>
+          <p class="text-sm italic mb-6" style="color:#C8963E">One of several decision frameworks I have applied across organizational contexts.</p>
+          <h2 class="text-4xl font-black leading-tight" style="color:#3D2000">Assumption, Evidence, Insight, Action.</h2>
+          <p class="mt-6 font-light leading-relaxed" style="color:#9A7040">I approach analytics as an operational decision system, connecting business assumptions with measurable evidence and translating findings into scalable, commercially relevant action.</p>
           <div class="mt-10 space-y-5">
-            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">1</div><div class="rounded-2xl p-5 flex-1" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Funnel optimization frameworks</div></div>
-            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">2</div><div class="rounded-2xl p-5 flex-1" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Customer cohort insights</div></div>
-            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">3</div><div class="rounded-2xl p-5 flex-1" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Operational SLA monitoring</div></div>
-            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">4</div><div class="rounded-2xl p-5 flex-1" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Executive performance dashboards</div></div>
+            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">1</div><div class="rounded-2xl p-5 flex-1 font-light" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Funnel optimization frameworks</div></div>
+            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">2</div><div class="rounded-2xl p-5 flex-1 font-light" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Customer cohort insights</div></div>
+            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">3</div><div class="rounded-2xl p-5 flex-1 font-light" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Operational SLA monitoring</div></div>
+            <div class="flex items-center gap-5"><div class="w-12 h-12 rounded-2xl flex items-center justify-center font-black flex-shrink-0 text-white" style="background:linear-gradient(135deg,#E49B0F,#804A00)">4</div><div class="rounded-2xl p-5 flex-1 font-light" style="background:#FEF3D7;border:1px solid #E8D5B0;color:#6B3A00">Executive performance dashboards</div></div>
           </div>
         </div>
+
         <div id="leadership" class="rounded-3xl p-10" style="background:linear-gradient(135deg,rgba(228,155,15,0.12),rgba(200,150,62,0.08));border:1px solid #E8D5B0">
-          <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">Leadership &amp; Data Culture</p>
-          <h2 class="text-4xl font-black leading-tight" style="color:#3D2000">Building data cultures, not just reporting systems.</h2>
+          <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">Leadership &amp; Data Culture</p>
+          <p class="text-sm italic mb-6" style="color:#C8963E">These reflect recurring leadership themes across multiple organizational transformations, each one unique in context.</p>
+          <h2 class="text-4xl font-black leading-tight" style="color:#3D2000">I build data cultures, not just reporting systems.</h2>
           <div class="mt-8 space-y-6">
-            <div class="rounded-2xl p-6" style="background:rgba(255,251,240,0.9);border:1px solid #E8D5B0"><h3 class="text-xl font-bold" style="color:#3D2000">Self-Service Analytics</h3><p class="mt-3 leading-relaxed" style="color:#9A7040">Enabled cross-functional teams to independently explore business insights.</p></div>
-            <div class="rounded-2xl p-6" style="background:rgba(255,251,240,0.9);border:1px solid #E8D5B0"><h3 class="text-xl font-bold" style="color:#3D2000">Data Literacy Programs</h3><p class="mt-3 leading-relaxed" style="color:#9A7040">Improved analytical understanding across operational and leadership teams.</p></div>
-            <div class="rounded-2xl p-6" style="background:rgba(255,251,240,0.9);border:1px solid #E8D5B0"><h3 class="text-xl font-bold" style="color:#3D2000">Cross-Functional Collaboration</h3><p class="mt-3 leading-relaxed" style="color:#9A7040">Aligned engineering, analytics, and business operations into unified data initiatives.</p></div>
+            <div class="rounded-2xl p-6" style="background:rgba(255,251,240,0.95);border:1px solid #E8D5B0">
+              <h3 class="text-xl font-black" style="color:#3D2000">Self-Service Analytics</h3>
+              <p class="mt-3 font-light leading-relaxed" style="color:#9A7040">I architect self-service environments that enable business teams to answer their own questions with confidence, reducing analytical bottlenecks and accelerating operational velocity.</p>
+            </div>
+            <div class="rounded-2xl p-6" style="background:rgba(255,251,240,0.95);border:1px solid #E8D5B0">
+              <h3 class="text-xl font-black" style="color:#3D2000">Data Literacy Programs</h3>
+              <p class="mt-3 font-light leading-relaxed" style="color:#9A7040">I invest in building analytical capability across teams, ensuring that data fluency extends beyond the data function and becomes a shared organizational competency.</p>
+            </div>
+            <div class="rounded-2xl p-6" style="background:rgba(255,251,240,0.95);border:1px solid #E8D5B0">
+              <h3 class="text-xl font-black" style="color:#3D2000">Cross-Functional Collaboration</h3>
+              <p class="mt-3 font-light leading-relaxed" style="color:#9A7040">I align engineering, analytics, and business leadership into unified data initiatives, creating shared ownership of outcomes and eliminating the silos that undermine data-driven culture.</p>
+            </div>
           </div>
           <div class="grid grid-cols-2 gap-5 mt-10">
-            <div class="rounded-2xl p-6 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-4xl font-black" style="color:#E49B0F">40%</div><div class="mt-2" style="color:#9A7040">Efficiency Gains</div></div>
-            <div class="rounded-2xl p-6 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-4xl font-black" style="color:#E49B0F">High</div><div class="mt-2" style="color:#9A7040">Adoption Rates</div></div>
+            <div class="rounded-2xl p-6 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-4xl font-black" style="color:#E49B0F">40%</div><div class="mt-2 font-light" style="color:#9A7040">Efficiency Gains Delivered</div></div>
+            <div class="rounded-2xl p-6 text-center" style="background:#FFFBF0;border:1px solid #E8D5B0"><div class="text-4xl font-black" style="color:#E49B0F">High</div><div class="mt-2 font-light" style="color:#9A7040">Tool Adoption Rates</div></div>
           </div>
         </div>
       </div>
@@ -501,14 +525,15 @@
       <div class="rounded-3xl p-12" style="background:#FFFBF0;border:1px solid #E8D5B0">
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
           <div>
-            <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">Thought Leadership</p>
-            <h2 class="text-4xl lg:text-5xl font-black leading-tight max-w-3xl" style="color:#3D2000">The Analyst's Craft — storytelling, systems, and strategic thinking.</h2>
-            <p class="mt-6 max-w-2xl leading-relaxed" style="color:#9A7040">Insights around SQL thinking, decision systems, data storytelling, AI adoption, and building analytics cultures in modern organizations.</p>
+            <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">Thought Leadership</p>
+            <p class="text-sm italic mb-6" style="color:#C8963E">One perspective from an ongoing body of thinking on data, strategy, and organizational intelligence.</p>
+            <h2 class="text-4xl lg:text-5xl font-black leading-tight max-w-3xl" style="color:#3D2000">The Analyst's Craft, storytelling, systems, and strategic thinking.</h2>
+            <p class="mt-6 max-w-2xl font-light leading-relaxed" style="color:#9A7040">I write and speak on SQL thinking, decision systems, data storytelling, AI adoption, and the organizational conditions that allow analytics cultures to take hold and deliver lasting value.</p>
           </div>
           <div class="rounded-3xl p-8" style="background:#FEF3D7;border:1px solid #E8D5B0;min-width:300px">
-            <div class="text-sm mb-3" style="color:#9A7040">Latest Perspective</div>
-            <h3 class="text-2xl font-bold leading-snug" style="color:#3D2000">Why data teams fail when they only build dashboards.</h3>
-            <p class="mt-4 text-sm leading-relaxed" style="color:#9A7040">Modern organizations need operational intelligence systems — not just reporting layers.</p>
+            <div class="text-sm font-bold mb-3" style="color:#9A7040">Latest Perspective</div>
+            <h3 class="text-2xl font-black leading-snug" style="color:#3D2000">Why data teams fail when they only build dashboards.</h3>
+            <p class="mt-4 text-sm font-light leading-relaxed" style="color:#9A7040">Modern organizations require operational intelligence systems, not additional reporting layers. The distinction defines whether a data function creates strategic value or merely describes the past.</p>
           </div>
         </div>
       </div>
@@ -517,14 +542,15 @@
     <!-- CONTACT -->
     <section id="contact" class="max-w-7xl mx-auto px-6 pt-12 pb-24">
       <div class="rounded-3xl overflow-hidden p-12 lg:p-16 relative" style="background:linear-gradient(135deg,rgba(228,155,15,0.15),#FFFBF0,rgba(128,74,0,0.1));border:1px solid #E8D5B0">
-        <div class="absolute inset-0 opacity-25" style="background:radial-gradient(circle at top right,rgba(228,155,15,0.4),transparent 30%),radial-gradient(circle at bottom left,rgba(128,74,0,0.3),transparent 30%)"></div>
+        <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at top right,rgba(228,155,15,0.4),transparent 30%),radial-gradient(circle at bottom left,rgba(128,74,0,0.3),transparent 30%)"></div>
         <div class="relative z-10 max-w-4xl">
-          <p class="uppercase tracking-widest text-sm mb-4" style="color:#E49B0F">Contact</p>
+          <p class="uppercase tracking-widest text-sm font-bold mb-2" style="color:#E49B0F">Contact</p>
+          <p class="text-sm italic mb-6" style="color:#C8963E">One conversation among many worth having. I welcome dialogue on data strategy, leadership, and organizational transformation.</p>
           <h2 class="text-5xl lg:text-6xl font-black leading-tight" style="color:#3D2000">Let's build data-driven organizations.</h2>
-          <p class="mt-8 text-xl leading-relaxed max-w-3xl" style="color:#6B3A00">Open to leadership opportunities focused on data strategy, analytics transformation, AI integration, and scalable platform architecture.</p>
+          <p class="mt-8 text-xl font-light leading-relaxed max-w-3xl" style="color:#6B3A00">I am open to executive leadership roles where I can build, scale, and lead data organizations that drive transformation through strategy, AI, and platform architecture.</p>
           <div class="mt-10 flex flex-wrap gap-5">
-            <a href="mailto:ashleykarani6@gmail.com" class="px-7 py-4 rounded-2xl text-white font-semibold hover:scale-105 transition-all inline-block shadow-lg" style="background:linear-gradient(to right,#E49B0F,#C8963E)">Email Ashley</a>
-            <a href="https://www.linkedin.com/in/ashley-karani-065b41163/" target="_blank" class="px-7 py-4 rounded-2xl font-semibold hover:bg-amber-50 transition-all inline-block" style="border:1px solid #E8D5B0;color:#6B3A00;background:#FFFBF0">LinkedIn Profile</a>
+            <a href="mailto:ashleykarani6@gmail.com" class="px-7 py-4 rounded-2xl text-white font-bold hover:scale-105 transition-all inline-block shadow-lg" style="background:linear-gradient(to right,#E49B0F,#C8963E)">Email Ashley</a>
+            <a href="https://www.linkedin.com/in/ashley-karani-065b41163/" target="_blank" class="px-7 py-4 rounded-2xl font-bold hover:bg-amber-50 transition-all inline-block" style="border:1px solid #E8D5B0;color:#6B3A00;background:#FFFBF0">LinkedIn Profile</a>
           </div>
         </div>
       </div>
