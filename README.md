@@ -2,7 +2,8 @@
 
 Personal portfolio site: **DATA | STRATEGY & AI**
 
-Live site (GitHub Pages): [https://karaniashley.github.io/portfolio/](https://karaniashley.github.io/portfolio/)
+Live site: [https://ashleykarani.com](https://ashleykarani.com)  
+GitHub Pages URL: [https://karaniashley.github.io/portfolio/](https://karaniashley.github.io/portfolio/)
 
 ## Local preview
 
